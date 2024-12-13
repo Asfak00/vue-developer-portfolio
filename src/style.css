@@ -9,4 +9,31 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", serif;
+  scroll-behavior: smooth;
+}
+
+.animation-bounce {
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animation-bounce2 {
+  animation: bounce2 2.3s infinite ease-in-out;
+}
+
+@keyframes bounce2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }

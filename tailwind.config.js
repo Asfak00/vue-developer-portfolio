@@ -9,7 +9,11 @@ export default {
     extend: {
       colors: {
         textColor: '#0f172a',
-        disableColor: '#6b7280',
+        darkBgColor: '#020617',
+        disableColor: '#545454',
+        darkDisableColor: '#abc2d3',
+        darkBorderColor: '#334155',
+        darkTextColor: '#D9EEFF',
         highlightColor: '#A576E3',
         highlightPrimary: '#04B5DD',
         borderColor: '#E9E9E9'
