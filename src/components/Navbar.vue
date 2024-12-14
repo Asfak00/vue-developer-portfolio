@@ -6,6 +6,7 @@ import {onMounted, ref, watch} from "vue";
 const currentTheme = ref('light');
 
 const emit = defineEmits(['update:theme'])
+const activeTab = ref(null)
 
 onMounted(() => {
   const savedTheme = localStorage.getItem('theme');
@@ -37,6 +38,10 @@ const applyTheme = (theme) => {
   document.documentElement.classList.toggle('dark', theme === 'dark');
 };
 
+const handleNavitemClick = (tab) => {
+  activeTab.value = tab;
+}
+
 </script>
 
 <template>
@@ -45,13 +50,20 @@ const applyTheme = (theme) => {
     <img :src="currentTheme === 'light' ? 'https://i.ibb.co.com/TYmXCgC/logo.png' : 'https://i.ibb.co.com/qx6pcB6/darklogo.png'" alt="logo/image" class="w-[60px]">
 
     <div class="flex items-center gap-[35px]">
-        <a href="#home" class="text-[1.1rem] font-[400] dark:text-darkTextColor text-textColor hover:text-highlightPrimary transition duration-300">Home</a>
-        <a href="#about-me" class="text-[1.1rem] font-[400] dark:text-darkTextColor text-textColor hover:text-highlightPrimary transition duration-300">About Me</a>
-        <a href="#experience" class="text-[1.1rem] font-[400] dark:text-darkTextColor text-textColor hover:text-highlightPrimary transition duration-300">Experience</a>
-        <a href="#skills" class="text-[1.1rem] font-[400] dark:text-darkTextColor text-textColor hover:text-highlightPrimary transition duration-300">Skills</a>
-        <a href="#projects" class="text-[1.1rem] font-[400] dark:text-darkTextColor text-textColor hover:text-highlightPrimary transition duration-300">Projects</a>
-        <a href="#blogs" class="text-[1.1rem] font-[400] dark:text-darkTextColor text-textColor hover:text-highlightPrimary transition duration-300">Blogs</a>
-        <a href="#achievements" class="text-[1.1rem] font-[400] dark:text-darkTextColor text-textColor hover:text-highlightPrimary transition duration-300">Achievements</a>
+
+        <a href="#home" :class="activeTab === 'home' && '!text-highlightPrimary'" @click="handleNavitemClick('home')" class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Home</a>
+
+        <a href="#about-me" :class="activeTab === 'about_me' && '!text-highlightPrimary'"  @click="handleNavitemClick('about_me')" class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">About Me</a>
+
+        <a href="#experience" :class="activeTab === 'experience' && '!text-highlightPrimary'"  @click="handleNavitemClick('experience')" class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Experience</a>
+
+        <a href="#skills" :class="activeTab === 'skills' && '!text-highlightPrimary'"  @click="handleNavitemClick('skills')" class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Skills</a>
+
+        <a href="#projects" :class="activeTab === 'projects' && '!text-highlightPrimary'"  @click="handleNavitemClick('projects')" class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Projects</a>
+
+        <a href="#blogs" :class="activeTab === 'blogs' && '!text-highlightPrimary'"  @click="handleNavitemClick('blogs')" class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Blogs</a>
+
+        <a href="#achievements" :class="activeTab === 'achievements' && '!text-highlightPrimary'"  @click="handleNavitemClick('achievements')" class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Achievements</a>
 
       <div class="flex items-center gap-[15px]">
         <button @click="handleThemeChange" class="border overflow-hidden dark:border-darkTextColor border-gray-300 rounded-md h-[42px] py-2 px-3">
