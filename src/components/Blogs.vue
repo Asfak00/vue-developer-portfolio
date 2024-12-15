@@ -59,30 +59,30 @@ onMounted(() => {
     </div>
 
     <div
-        class="grid mt-12 grid-cols-4 w-[50%] mx-auto relative rounded-full border dark:border-darkTextColor/40 border-borderColor">
+        class="grid mt-10 lg:mt-12 gap-6 grid-cols-4 w-full overflow-x-auto sm:overflow-visible sm:w-[90%] lg:w-[50%] mx-auto relative rounded-full border dark:border-darkTextColor/40 border-borderColor">
 
       <div
-          :class="activeTab === 'all' ?'translate-x-[2%]' : activeTab === 'front_end' ? 'translate-x-[98%]' : activeTab === 'responsive' ? 'translate-x-[199%]' : 'translate-x-[298%]'"
-          class="bg-highlightPrimary/10 dark:bg-highlightPrimary/50 absolute h-[85%] rounded-full top-[50%] w-[25%] transform transition-all duration-700 translate-y-[-50%]"></div>
+          :class="activeTab === 'all' ?'translate-x-[2%] w-[80px] sm:w-[25%]' : activeTab === 'front_end' ? 'translate-x-[73%] sm:translate-x-[98%] w-[110px] sm:w-[25%]' : activeTab === 'responsive' ? 'translate-x-[158%] w-[120px] sm:w-[25%] sm:translate-x-[199%]' : 'translate-x-[279%] w-[110px] sm:w-[25%] sm:translate-x-[298%]'"
+          class="bg-highlightPrimary/10 dark:bg-highlightPrimary/50 absolute h-[90%] sm:h-[85%] rounded-full top-[50%] w-[25%] transform transition-all duration-700 translate-y-[-50%]"></div>
 
-      <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700"
+      <button class="py-3.5 px-4 pl-8 sm:pl-9 text-center dark:text-darkTextColor min-w-max text-[1rem] font-[400] transition-all duration-700"
               :class="activeTab === 'all' && 'text-highlightPrimary'" @click="handleActiveTab('all')">All
       </button>
-      <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700"
+      <button class="py-3.5 px-4 pl-3 sm:pl-4 text-center dark:text-darkTextColor min-w-max text-[1rem] font-[400] transition-all duration-700"
               :class="activeTab === 'front_end' && 'text-highlightPrimary'" @click="handleActiveTab('front_end')">
         Front-End
       </button>
-      <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700"
+      <button class="py-3.5 px-4 pl-8 sm:pl-4 text-center dark:text-darkTextColor min-w-max text-[1rem] font-[400] transition-all duration-700"
               :class="activeTab === 'responsive' && 'text-highlightPrimary'" @click="handleActiveTab('responsive')">
         Responsive
       </button>
-      <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700"
+      <button class="py-3.5 px-4 pl-16 sm:pl-0 text-center dark:text-darkTextColor min-w-max text-[1rem] font-[400] transition-all duration-700"
               :class="activeTab === 'javascript' && 'text-highlightPrimary'" @click="handleActiveTab('javascript')">
         Javascript
       </button>
     </div>
 
-    <div class="grid grid-cols-3 gap-[20px] mt-12 relative">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] mt-12 relative">
       <div
           v-for="(blog, index) in filteredBlogs"
           :key="`${blog.id}-${animationKey}`"
@@ -90,7 +90,7 @@ onMounted(() => {
           :style="`animation-delay: ${index * 100}ms`"
       >
         <div>
-          <div class="h-[250px] overflow-hidden rounded-t-md">
+          <div class="h-[180px] lg:h-[250px] overflow-hidden rounded-t-md">
             <img :alt="blog.title" :src="blog.thumbnail"
                  class="hover:scale-[1.1] transition-all duration-300 object-cover rounded-t-md"/>
           </div>

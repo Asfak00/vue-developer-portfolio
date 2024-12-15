@@ -45,7 +45,7 @@ const handleNavitemClick = (tab) => {
 </script>
 
 <template>
-  <nav class="w-full sticky top-0 left-0 backdrop-blur-2xl z-20 py-1.5 px-10 max-w-[1600px] mx-auto border-b dark:border-darkBorderColor border-borderColor flex items-center justify-between dark:bg-darkBgColor transition-all duration-500">
+  <nav class="hidden lg:flex w-full sticky top-0 left-0 backdrop-blur-2xl z-50 py-1.5 px-10 max-w-[1600px] mx-auto border-b dark:border-darkBorderColor border-borderColor items-center justify-between dark:bg-darkBgColor transition-all duration-500">
 
     <img :src="currentTheme === 'light' ? 'https://i.ibb.co.com/TYmXCgC/logo.png' : 'https://i.ibb.co.com/qx6pcB6/darklogo.png'" alt="logo/image" class="w-[60px]">
 

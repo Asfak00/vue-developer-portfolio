@@ -29,10 +29,10 @@ const toggleDescription = (projectName) => {
       <div class="w-[70%] h-[3px] bg-highlightPrimary mt-1"></div>
     </div>
 
-    <div class="grid grid-cols-3 gap-[20px] mt-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] mt-12">
       <div v-for="project in projectsData" :key="project.name" class="border dark:border-darkBorderColor border-borderColor rounded-md">
 
-        <div class="h-[210px] overflow-hidden rounded-t-md">
+        <div class="h-[150px] lg:h-[210px] overflow-hidden rounded-t-md">
           <img
               :alt="project.name"
               :src="project.thumbnail"

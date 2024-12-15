@@ -25,7 +25,7 @@ watch(()=> activeTab.value,
 </script>
 
 <template>
-  <Layout id="skills" class="dark:bg-darkBgColor pt-5 transition-all duration-500">
+  <Layout id="skills" class="dark:bg-darkBgColor pt-12 lg:pt-5 transition-all duration-500">
     <div class="w-max mx-auto pt-12 flex flex-col items-end">
       <h4 class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">Skills</h4>
 
@@ -34,7 +34,7 @@ watch(()=> activeTab.value,
       <div class="w-[70%] h-[3px] bg-highlightPrimary mt-1"></div>
     </div>
 
-    <div class="grid mt-12 grid-cols-2 w-[25%] mx-auto relative rounded-full border dark:border-darkTextColor/40 border-borderColor">
+    <div class="grid mt-12 grid-cols-2 w-[90%] sm:w-[60%] lg:w-[25%] mx-auto relative rounded-full border dark:border-darkTextColor/40 border-borderColor">
 
       <div :class="activeTab === 'front_end' ?'translate-x-[2%]' : activeTab === 'back_end' ? 'translate-x-[105%]' : activeTab === 'framework' ? 'translate-x-[209%]' : 'translate-x-[97.5%]'" class="bg-highlightPrimary/10 dark:bg-highlightPrimary/50 absolute h-[85%] rounded-full top-[50%] w-[50%] transform transition-all duration-700 translate-y-[-50%]"></div>
 
@@ -44,7 +44,7 @@ watch(()=> activeTab.value,
       <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700" :class="activeTab === 'tools' && 'text-highlightPrimary'" @click="handleActiveTab('tools')">Tools</button>
     </div>
 
-    <div class="mt-8 grid grid-cols-8 gap-[15px]">
+    <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-[15px]">
       <div v-for="skill in filteredSkills">
         <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
           <img alt="icon" class="w-[32px] h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300" v-if="skill.icon.startsWith('https')" :src="skill.icon"/>
