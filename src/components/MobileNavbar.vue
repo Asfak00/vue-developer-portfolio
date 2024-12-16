@@ -1,7 +1,7 @@
 <script setup>
 import {styleGuide} from "../Utils/ReusableStyles.js";
 import { Icon } from '@iconify/vue';
-import {onMounted, ref, watch} from "vue";
+import {onBeforeMount, onMounted, ref, watch} from "vue";
 
 const currentTheme = ref('light');
 
@@ -9,7 +9,7 @@ const emit = defineEmits(['update:theme'])
 const activeTab = ref(null)
 const isMenuOpen = ref(false)
 
-onMounted(() => {
+onBeforeMount(() => {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
     currentTheme.value = savedTheme;

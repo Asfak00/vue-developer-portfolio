@@ -21,6 +21,7 @@ const handleThemeUpdate = (theme)=> {
 
 <template>
 
+<div class="dark:bg-darkBgColor">
   <MobileNavbar/>
   <Navbar @update:theme="handleThemeUpdate"/>
   <Hero :theme="currentTheme"/>
@@ -31,5 +32,6 @@ const handleThemeUpdate = (theme)=> {
   <Blogs/>
   <Achievements/>
   <Footer/>
+</div>
 
 </template>

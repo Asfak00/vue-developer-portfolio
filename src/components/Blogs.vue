@@ -122,7 +122,7 @@ onMounted(() => {
       </div>
 
       <!--   shadow and load more button   -->
-      <div v-if="isLoadMoreVisible" class="w-full flex items-center justify-center h-[200px] bg-gradient-to-b from-white/50 dark:to-darkBgColor dark:from-darkBgColor/50 to-white absolute bottom-0">
+      <div v-if="isLoadMoreVisible" class="w-full flex items-center justify-center h-[200px] bg-gradient-to-b from-white/50 dark:to-darkBgColor dark:z-10 dark:from-darkBgColor/50 to-white absolute bottom-0">
         <button :class="styleGuide.buttonFill" @click="handleShowAllBlogs">See all blogs</button>
       </div>
     </div>

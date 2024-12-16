@@ -17,21 +17,21 @@ const titleKey = ref(0);
 
 const icons = [
   {
-    component: 'https://lottie.host/7abe0102-6e8d-4932-97f6-6373ed90acea/wqusit1EAk.lottie',
+    component: '/smile.gif',
     name: 'react',
     class: 'absolute top-0 lg:top-[-100px] left-[100px] sm:left-[180px] lg:left-[100px]',
     width: 50,
     height: 50
   },
   {
-    component: 'https://lottie.host/e3af52e1-1f26-46c9-b828-93cae6a15594/obOMzxDJlm.lottie',
+    component: '/robot.gif',
     name: 'vue',
     class: 'absolute top-0 lg:top-[-150px] sm:right-[150px] right-0 lg:right-[250px]',
     width: 150,
     height: 150
   },
   {
-    component: 'https://lottie.host/8a2e0099-087e-444d-85ec-c8e63a88093d/4tdw4l2HFz.lottie',
+    component: '/js.gif',
     name: 'js',
     class: 'absolute bottom-0 sm:bottom-[-70px] right-0 sm:right-[220px]',
     width: 70,
@@ -102,10 +102,9 @@ onUnmounted(() => {
         </h1>
       </transition>
 
-      <p class="text-disableColor dark:text-darkDisableColor text-[1rem] mt-2 w-full sm:w-[70%]">I am Asfak Ahmed, a front-end web
-        developer with over 2+ years of experience. I consider coding to be the most important aspect of my life, and I
-        thrive on tackling complex problems. I am also the founder and creator of ZenUI Library, a platform that
-        provides developers with essential UI components and templates.</p>
+      <p class="text-disableColor dark:text-darkDisableColor text-[1rem] mt-2 w-full sm:w-[70%]">
+        I am Asfak Ahmed, a Front-End Web Developer with over two years of experience and the founder of ZenUI Library, a platform offering essential UI components and templates. Coding is my passion, and I excel at solving complex problems with creative solutions.
+      </p>
 
       <div class="flex flex-col sm:flex-row sm:items-center gap-[15px] mt-8">
         <a href="https://zcal.co/asfak00/discuss30" target="_blank" :class="styleGuide.buttonFill" class="py-2.5 w-max">
@@ -120,7 +119,7 @@ onUnmounted(() => {
       <!--   animated icons   -->
       <template v-for="(icon, index) in icons" :key="index">
         <Transition name="icon-scale">
-          <DotLottieVue v-if="currentIcon?.name === icon.name" :class="icon.class" :style="`height: ${icon.width}px; width: ${icon.height}px`" autoplay loop :src="icon.component" />
+          <img :alt="icon.name" :src="icon.component" v-if="currentIcon?.name === icon.name" :class="icon.class" :style="`height: ${icon.width}px; width: ${icon.height}px`"/>
         </Transition>
       </template>
 
@@ -136,14 +135,14 @@ onUnmounted(() => {
       <!--   projects card   -->
       <div
           class="bg-white dark:bg-slate-900 animation-bounce rounded-md py-1 sm:py-2.5 px-5 sm:px-11 absolute shadow-sm top-[80px] sm:top-[150px] left-[-50px] sm:left-[0px] w-max flex transition-all duration-300 flex-col items-center justify-center">
-        <h6 class="text-[1.2rem] sm:text-[1.8rem] dark:text-darkTextColor font-[600] text-textColor leading-[35px]">5+</h6>
+        <h6 class="text-[1.2rem] sm:text-[1.8rem] font-[600] text-highlightPrimary leading-[35px]">5+</h6>
         <p class="text-disableColor dark:text-darkDisableColor text-[0.7rem] sm:text-[0.9rem]">Satisfied clients</p>
       </div>
 
       <!--   experience card   -->
       <div
           class="bg-white dark:bg-slate-900 animation-bounce2 rounded-md py-1 sm:py-2.5 px-4 sm:px-8 absolute shadow-sm bottom-[20px] sm:bottom-[50px] left-[-30px] sm:left-[30px] w-max flex transition-all duration-300 flex-col items-center justify-center">
-        <h6 class="text-[1.2rem] sm:text-[1.8rem] font-[600] dark:text-darkTextColor text-textColor leading-[35px]">2+</h6>
+        <h6 class="text-[1.2rem] sm:text-[1.8rem] font-[600] text-highlightColor leading-[35px]">2+</h6>
         <p class="text-disableColor dark:text-darkDisableColor text-[0.7rem] sm:text-[0.9rem]">Years of experience</p>
       </div>
 

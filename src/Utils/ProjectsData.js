@@ -39,7 +39,7 @@ export const projectsData = [
     {
         name: 'Resume Builder Application',
         description: 'With the Resume Builder app, creating a professional resume has never been easier. Customize your resume effortlessly by choosing your preferred font colors, adding photos if desired, or leaving them out for a clean look. Once you\'re satisfied with your design, download your resume for free. ',
-        thumbnail: 'https://asfakahmed.netlify.app/assets/resumeBuilder-b73ee4e4.png',
+        thumbnail: 'https://i.ibb.co.com/x6xgZcH/resume-Builder.png',
         tags: [
             'reactJS',
             'SASS',
