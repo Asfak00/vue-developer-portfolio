@@ -1,21 +1,9 @@
 export const experienceData = [
     {
-        logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYRE0Ivt0h5EQSefmxuxtS_exh5DDjnPW_21vDqucAGHH6pGMKlsGQOGrQ9DrVZEzHxBQ&usqp=CAU',
-        position: 'Contributing Author',
-        start_date: 'Sep 2024',
-        end_date: '',
-        jobType: 'part time',
-        website: 'https://freecodecamp.org/',
-        company_name: 'freeCodeCamp',
-        location: 'San Francisco, ca',
-        is_onsite: false,
-        description: 'In my free time, I write articles for freeCodeCamp, sharing insights, tutorials, and tips on front-end development and UI/UX design to help the developer community.'
-    },
-    {
-        logo: 'https://media.licdn.com/dms/image/v2/D560BAQFbb9lbZqHrRQ/company-logo_100_100/company-logo_100_100/0/1697881816844/doplaccrm_logo?e=1742428800&v=beta&t=9N_h5kTXwN19JFqt6mEaYHf56knQlGoEWZ24C6Z3sFE',
+        logo: 'https://i.ibb.co/cX2QPCHS/392890074-184215761392204-1600606221656304855-n.jpg',
         position: 'Front-End Web Developer',
         start_date: 'Feb 2024',
-        end_date: '',
+        end_date: 'Mar 2025',
         jobType: 'full time',
         company_name: 'Dopac CRM',
         website: 'https://doplac.com/',
@@ -24,7 +12,19 @@ export const experienceData = [
         description: 'Doplac CRM is a CRM application development company. I am working here as a front-end developer. Here I contribute to tool development for CRM applications. Our Company Website Link - doplac.com'
     },
     {
-        logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQFI-nyxhinGFA/company-logo_100_100/company-logo_100_100/0/1689205320551?e=1742428800&v=beta&t=BrmwL49qL8PbiqFP6MVX3btvXVwA_a4waR-ski2h1CI',
+        logo: 'https://i.ibb.co/d02333kP/455981620-1935638293552648-2042693223531972310-n.jpg',
+        position: 'Front-End Web Developer',
+        start_date: 'Apr 2025',
+        end_date: '',
+        jobType: 'full time',
+        website: 'https://webmakersbd.com/',
+        company_name: 'WebMakers LTD',
+        location: 'Mohammadpur, Dhaka',
+        is_onsite: true,
+        description: 'Building modern, scalable user interfaces with React, Tailwind CSS, and Next.js. Collaborating closely with designers and backend teams to deliver high-performance web applications.'
+    },
+    {
+        logo: 'https://i.ibb.co/KjL4mWZW/345031252-126984147044280-3272967429153764623-n.jpg',
         position: 'Front-End Web Developer',
         start_date: 'Mar 2023',
         end_date: 'Jan 2024',

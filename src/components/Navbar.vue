@@ -75,7 +75,7 @@ const handleNavitemClick = (tab) => {
           <Icon :class="currentTheme === 'dark' ? 'opacity-100 translate-y-[-24px]' : 'opacity-0 translate-y-[20px] z-[-1]'"  icon="material-symbols-light:dark-mode" class="transition-all duration-700 dark:text-darkTextColor" width="24" height="24" />
 
         </button>
-        <button :class="styleGuide.buttonOutline"><a download="resume" href="/resume.pdf">Resume</a></button>
+        <button :class="styleGuide.buttonOutline"><a download="developerasfak" href="/developerasfak.pdf">Resume</a></button>
       </div>
     </div>
 

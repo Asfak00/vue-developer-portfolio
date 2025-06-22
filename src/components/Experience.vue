@@ -32,12 +32,8 @@ const toggleDescription = (description) => {
     <div class="pt-10 lg:pt-14 grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
       <div v-for="experience in experienceData" class="lg:first:mt-8 dark:border-darkBorderColor w-full h-max lg:last:mt-8 border border-borderColor rounded-md py-6 px-4 flex gap-[10px]">
 
-        <a :href="experience.website" v-if="experience.company_name === 'freeCodeCamp'" target="_blank" class="min-w-[60px]">
-          <img alt="company/logo" :src="experience.logo" class="w-[45px] h-[45px] mx-auto rounded-2xl"/>
-        </a>
-
-        <a :href="experience.website" v-else target="_blank" class="min-w-[60px]">
-          <img alt="company/logo" :src="experience.logo" class="w-[60px] h-[60px] rounded-2xl"/>
+        <a :href="experience.website" target="_blank" class="min-w-[60px]">
+          <img alt="company/logo" :src="experience.logo" class="w-[45px] h-[45px] mx-auto rounded-full"/>
         </a>
 
         <div>

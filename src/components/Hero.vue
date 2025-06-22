@@ -62,6 +62,7 @@ onMounted(() => {
       'Front-End Web Developer',
       'React Developer',
       'Javascript Developer',
+      'NextJS Developer',
       'Vue Developer'
   ];
   let index = 0;
@@ -135,7 +136,7 @@ onUnmounted(() => {
       <!--   projects card   -->
       <div
           class="bg-white dark:bg-slate-900 animation-bounce rounded-md py-1 sm:py-2.5 px-5 sm:px-11 absolute shadow-sm top-[80px] sm:top-[150px] left-[-50px] sm:left-[0px] w-max flex transition-all duration-300 flex-col items-center justify-center">
-        <h6 class="text-[1.2rem] sm:text-[1.8rem] font-[600] text-highlightPrimary leading-[35px]">5+</h6>
+        <h6 class="text-[1.2rem] sm:text-[1.8rem] font-[600] text-highlightPrimary leading-[35px]">6+</h6>
         <p class="text-disableColor dark:text-darkDisableColor text-[0.7rem] sm:text-[0.9rem]">Satisfied clients</p>
       </div>
 

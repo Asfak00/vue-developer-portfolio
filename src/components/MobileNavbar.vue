@@ -80,7 +80,7 @@ const handleNavitemClick = (tab) => {
     <a href="#achievements" :class="activeTab === 'achievements' && '!text-highlightPrimary'"  @click="handleNavitemClick('achievements')" class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Achievements</a>
 
     <div class="flex items-center gap-[15px]">
-      <button :class="styleGuide.buttonOutline"><a download="resume" href="/resume.pdf">Resume</a></button>
+      <button :class="styleGuide.buttonOutline"><a download="resume" href="/developerasfak.pdf">Resume</a></button>
     </div>
   </div>
   </transition>
