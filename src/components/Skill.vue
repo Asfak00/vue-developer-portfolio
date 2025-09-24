@@ -25,8 +25,8 @@ watch(()=> activeTab.value,
 </script>
 
 <template>
-  <Layout id="skills" class="dark:bg-darkBgColor pt-12 lg:pt-5 transition-all duration-500">
-    <div class="w-max mx-auto pt-12 flex flex-col items-end">
+  <Layout id="skills" class="dark:bg-darkBgColor pt-12 lg:pt-5">
+    <div class="w-max mx-auto pt-20 flex flex-col items-end">
       <h4 class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">Skills</h4>
 
       <!--   line   -->
@@ -39,8 +39,6 @@ watch(()=> activeTab.value,
       <div :class="activeTab === 'front_end' ?'translate-x-[2%]' : activeTab === 'back_end' ? 'translate-x-[105%]' : activeTab === 'framework' ? 'translate-x-[209%]' : 'translate-x-[97.5%]'" class="bg-highlightPrimary/10 dark:bg-highlightPrimary/50 absolute h-[85%] rounded-full top-[50%] w-[50%] transform transition-all duration-700 translate-y-[-50%]"></div>
 
       <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700" :class="activeTab === 'front_end' && 'text-highlightPrimary'" @click="handleActiveTab('front_end')">Front-End</button>
-<!--      <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700" :class="activeTab === 'back_end' && 'text-highlightPrimary'" @click="handleActiveTab('back_end')">Back-End</button>-->
-<!--      <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700" :class="activeTab === 'framework' && 'text-highlightPrimary'" @click="handleActiveTab('framework')">Framework</button>-->
       <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700" :class="activeTab === 'tools' && 'text-highlightPrimary'" @click="handleActiveTab('tools')">Tools</button>
     </div>
 

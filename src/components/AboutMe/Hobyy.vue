@@ -16,7 +16,7 @@
       </li>
       <li>
         <b>Traveling:</b>
-        Exploring new places, meeting people, and experiencing different cultures inspire me and keep life exciting.
+        Exploring new places, meeting people, and experiencing different cultures inspire me and keep life exciting. If you interested to see my traveling photography and videography please connect with me in Facebook or Instagram.
       </li>
       <li>
         <b>Writing Blogs:</b>

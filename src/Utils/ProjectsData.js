@@ -49,4 +49,17 @@ export const projectsData = [
         github: 'https://github.com/Asfak00/resume-builder-app',
         live: 'https://one-resume-builder.netlify.app/'
     },
+    {
+        name: 'Readme Studio AI',
+        description: 'Readme Studio is an advanced AI that generates clean, structured, and professional READMEs for you. Save time, ensure clarity, and elevate your documentation with intelligent automation.',
+        thumbnail: 'https://i.ibb.co.com/fzN81cPy/image.png',
+        tags: [
+            'Github',
+            'Readme',
+            'ai',
+            'readme editor',
+        ],
+        github: 'https://github.com/zenui-labs/readme-studio',
+        live: 'https://readmestudio.zenui.net/'
+    },
 ]

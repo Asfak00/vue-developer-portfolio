@@ -85,7 +85,7 @@ onUnmounted(() => {
 
 <template>
   <Layout id="home"
-          class="min-h-[90vh] flex-col lg:flex-row flex items-center justify-between relative dark:bg-darkBgColor transition-all duration-500 z-0 gap-12 sm:gap-16 lg:gap-0">
+          class="min-h-[90vh] flex-col lg:flex-row flex items-center justify-between relative dark:bg-darkBgColor z-0 gap-12 sm:gap-16 lg:gap-0">
     <!--  up shadow  -->
     <div
         class="bg-highlightPrimary absolute top-[30px] left-[80px] blur-[200px] dark:w-[250px] dark:h-[250px] dark:blur-[180px] w-[200px] h-[200px] rounded-full z-[-1]"></div>
@@ -104,7 +104,7 @@ onUnmounted(() => {
       </transition>
 
       <p class="text-disableColor dark:text-darkDisableColor text-[1rem] mt-2 w-full sm:w-[70%]">
-        I am Asfak Ahmed, a Front-End Web Developer with over two years of experience and the founder of ZenUI Library, a platform offering essential UI components and templates. Coding is my passion, and I excel at solving complex problems with creative solutions.
+        I am Asfak Ahmed, a Front-End Web Developer with over two years of experience and the founder of <b>ZenUI Labs</b>, An ecosystem that unifies UI libraries, developer tools, and innovative solutions under one roof. Coding is my passion, and I excel at solving complex problems with creative solutions.
       </p>
 
       <div class="flex flex-col sm:flex-row sm:items-center gap-[15px] mt-8">
@@ -112,7 +112,7 @@ onUnmounted(() => {
           <Icon icon="hugeicons:calendar-03" width="22" height="22"/>
           Schedule a meeting
         </a>
-        <a href="#about-me" :class="styleGuide.buttonOutline" class="py-2.5 w-max">
+        <a href="#about-me" :class="styleGuide.buttonOutline" class="dark:!border-darkBorderColor py-2.5 w-max">
           About Me
         </a>
       </div>

@@ -18,7 +18,7 @@ const handleActiveTab = (tab) => {
 </script>
 
 <template>
-  <Layout id="about-me" class="pt-16 lg:pt-8 dark:bg-darkBgColor transition-all duration-500">
+  <Layout id="about-me" class="pt-16 lg:pt-8 dark:bg-darkBgColor">
     <div class="w-max mx-auto flex flex-col items-end">
       <h4 class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">About Me</h4>
 

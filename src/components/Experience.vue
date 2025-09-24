@@ -20,8 +20,8 @@ const toggleDescription = (description) => {
 </script>
 
 <template>
-  <Layout id="experience" class="dark:bg-darkBgColor pt-12 lg:pt-0 transition-all duration-500">
-    <div class="w-max mx-auto pt-8 flex flex-col items-end">
+  <Layout id="experience" class="dark:bg-darkBgColor pt-12 lg:pt-0">
+    <div class="w-max mx-auto pt-16 flex flex-col items-end">
       <h4 class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">Experience</h4>
 
       <!--   line   -->

@@ -49,7 +49,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <Layout id="blogs" class="pt-8 dark:bg-darkBgColor transition-all duration-500">
+  <Layout id="blogs" class="pt-8 dark:bg-darkBgColor">
     <div class="w-max mx-auto pt-12 flex flex-col items-end">
       <h4 class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">Blogs</h4>
 

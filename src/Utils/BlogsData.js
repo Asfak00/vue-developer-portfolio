@@ -18,6 +18,26 @@ export const blogsData = [
         url: 'https://www.freecodecamp.org/news/how-to-write-better-variable-names/'
     },
     {
+        title: 'Why Front-End Developers Should Understand UI/UX Design',
+        description: 'When users interact with a website or application, the first thing they notice isn’t the code. Instead, it’s the design and experience. Smooth navigation, intuitive layouts, and visually appealing interfaces are what keep users engaged.',
+        thumbnail: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1757677089930/07115f35-ba9e-452a-bf95-3a96de7a5d24.png',
+        publishedPlatform: 'freeCodeCamp',
+        views: '4,442',
+        group: 'front_end',
+        url: 'https://www.freecodecamp.org/news/why-front-end-developers-should-understand-uiux-design/'
+    },
+    {
+        title: 'How to Build Modals & Dropdowns That Behave Like Native Browser Popups',
+        description: 'If you’ve ever tried building your own modal or dropdown in React, you’ve probably run into this frustrating issue:\n' +
+            '\n' +
+            '👉 Your modal gets cut off when the parent container has overflow: hidden or overflow: scroll.',
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*0etrxL5VrAYbCMDo67wHQw.png',
+        publishedPlatform: 'freeCodeCamp',
+        views: '442',
+        group: 'front_end',
+        url: 'https://medium.com/@asfak00/how-to-build-modals-dropdowns-that-behave-like-native-browser-popups-5e0b760b4c32'
+    },
+    {
         title: '9 Features Make CSS Easier in 2024',
         description: 'ভাই সিএসএস প্রোগ্রামিং ল্যাঙ্গুয়েজ না এইটা আমরা সবাই জানি ! কিন্তু আপনি কি জানেন ২০২৪ সালে সিএসএস দিয়ে ও ডায়নামিক কাজ করা সম্ভব? হ্যাঁ, আপনি ঠিকই শুনেছেন সিএসএস দিয়ে ও এখন আপনি প্রোগ্রামিং করতে পারবেন। কিন্তু ভাই কেমনে, একটু কষ্ট করে এই পুরো আর্টিকেল পড়েন তাহলেই বুঝতে পারবেন।\n' +
             '\n' +

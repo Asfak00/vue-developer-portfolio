@@ -11,9 +11,9 @@ export default {
         textColor: '#0f172a',
         darkBgColor: '#020617',
         disableColor: '#545454',
-        darkDisableColor: '#abc2d3',
+        darkDisableColor: '#d5d5d5',
         darkBorderColor: '#334155',
-        darkTextColor: '#D9EEFF',
+        darkTextColor: '#f3f3f3',
         highlightColor: '#A576E3',
         highlightPrimary: '#04B5DD',
         borderColor: '#E9E9E9'
