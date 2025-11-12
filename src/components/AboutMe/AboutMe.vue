@@ -7,7 +7,7 @@ import HasnodeIcon from "../../SvgIcons/HasnodeIcon.vue";
 <template>
     <div class="text-[1rem] font-[400] dark:text-darkTextColor text-textColor">
       <p>
-        My name is Asfak Ahmed, and I am passionate about crafting exceptional user experiences as a Front-End Web Developer. With over 2 years of hands-on experience in the industry, I currently thrive in my role at WebMakers LTD, where I contribute to building intuitive interfaces that drive user engagement and satisfaction.
+        My name is Asfak Ahmed, and I am passionate about crafting exceptional user experiences as a Front-End Web Developer. With over 3 years of hands-on experience in the industry, I currently thrive in my role at WebMakers LTD, where I contribute to building intuitive interfaces that drive user engagement and satisfaction.
       </p>
 
       <p class="mt-5">

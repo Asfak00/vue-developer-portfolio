@@ -104,7 +104,7 @@ onUnmounted(() => {
       </transition>
 
       <p class="text-disableColor dark:text-darkDisableColor text-[1rem] mt-2 w-full sm:w-[70%]">
-        I am Asfak Ahmed, a Front-End Web Developer with over two years of experience and the founder of <b>ZenUI Labs</b>, An ecosystem that unifies UI libraries, developer tools, and innovative solutions under one roof. Coding is my passion, and I excel at solving complex problems with creative solutions.
+        I am Asfak Ahmed, a Front-End Web Developer with over three years of experience and the founder of <b>ZenUI Labs</b>, An ecosystem that unifies UI libraries, developer tools, and innovative solutions under one roof. Coding is my passion, and I excel at solving complex problems with creative solutions.
       </p>
 
       <div class="flex flex-col sm:flex-row sm:items-center gap-[15px] mt-8">
