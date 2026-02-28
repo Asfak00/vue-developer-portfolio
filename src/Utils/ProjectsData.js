@@ -62,4 +62,16 @@ export const projectsData = [
         github: 'https://github.com/zenui-labs/readme-studio',
         live: 'https://readmestudio.zenui.net/'
     },
+    {
+        name: 'ZenUI - VueJS UI Library',
+        description: 'ZenUI is a Open-Source VueJS and Tailwind CSS UI components library dedicated to providing developers with the tools they need to create stunning, responsive websites effortlessly. ZenUI aims to simplify the development process by offering a comprehensive collection of pre-built UI components and more.',
+        thumbnail: 'https://i.ibb.co.com/hRJK6Ypj/ZENUI-LIBRARY-VUE-Open-Source-Free-Components-Library-For-Vue-Applications.png',
+        tags: [
+            'VueJS',
+            'Tailwind CSS',
+            'UI',
+        ],
+        github: 'https://github.com/zenui-labs/zenui-library-vue',
+        live: 'https://vueui.zenui.net/'
+    },
 ]

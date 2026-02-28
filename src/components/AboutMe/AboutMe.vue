@@ -7,7 +7,7 @@ import HasnodeIcon from "../../SvgIcons/HasnodeIcon.vue";
 <template>
     <div class="text-[1rem] font-[400] dark:text-darkTextColor text-textColor">
       <p>
-        My name is Asfak Ahmed, and I am passionate about crafting exceptional user experiences as a Front-End Web Developer. With over 3 years of hands-on experience in the industry, I currently thrive in my role at WebMakers LTD, where I contribute to building intuitive interfaces that drive user engagement and satisfaction.
+        My name is Asfak Ahmed, and I am passionate about crafting exceptional user experiences as a Front-End Engineer. With over 3 years of hands-on experience in the industry, I currently thrive in my role at WebMakers LTD, where I contribute to building intuitive interfaces that drive user engagement and satisfaction.
       </p>
 
       <p class="mt-5">
@@ -15,7 +15,7 @@ import HasnodeIcon from "../../SvgIcons/HasnodeIcon.vue";
       </p>
 
       <p class="mt-5">
-        Beyond my professional roles, I am the proud founder and Creator of ZenUI Labs. ZenUI Labs is an ecosystem that unifies UI libraries, developer tools, and innovative solutions under one roof. I'm made some of useful tools from ZenUI Labs like ZenUI Library, Readme Studio AI, React Color Picker and React Image etc.
+        Beyond my professional roles, I am the proud founder and Creator of <a href="http://zenui.net" target="_blank" class="text-blue-500 hover:underline">ZenUI Labs</a>. ZenUI Labs is an ecosystem that unifies UI libraries, developer tools, and innovative solutions under one roof. I'm made some of useful tools from ZenUI Labs like <a href="https://reactui.zenui.net/" target="_blank" class="text-blue-500 hover:underline">ZenUI Library (React)</a>, <a href="https://vueui.zenui.net/" target="_blank" class="text-blue-500 hover:underline">ZenUI Library (Vue)</a>, <a href="https://readmestudio.zenui.net/" target="_blank" class="text-blue-500 hover:underline">Readme Studio AI</a>, <a href="https://color-picker.zenui.net/" target="_blank" class="text-blue-500 hover:underline">Color Picker</a> and <a href="https://react-hooks.zenui.net/" target="_blank" class="text-blue-500 hover:underline">React Hooks</a> etc.
       </p>
     </div>
 
